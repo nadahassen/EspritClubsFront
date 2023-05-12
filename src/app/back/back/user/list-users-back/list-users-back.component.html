@@ -1,0 +1,74 @@
+ <!-- Favicons -->
+ <link href="/assets/back/img/favicon.png" rel="icon">
+ <link href="/assets/back/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+ <!-- Google Fonts -->
+ <link href="https://fonts.gstatic.com" rel="preconnect">
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+ <!-- Vendor CSS Files -->
+ <link href="/assets/back/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href="/assets/back/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+ <link href="/assets/back/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+ <link href="/assets/back/vendor/quill/quill.snow.css" rel="stylesheet">
+ <link href="/assets/back/vendor/quill/quill.bubble.css" rel="stylesheet">
+ <link href="/assets/back/vendor/remixicon/remixicon.css" rel="stylesheet">
+ <link href="/assets/back/vendor/simple-datatables/style.css" rel="stylesheet">
+<app-header-back>
+</app-header-back>
+<app-side-bar-back></app-side-bar-back>
+ <!-- Template Main CSS File -->
+ <link href="/assets/back/css/style.css" rel="stylesheet">
+
+
+<div class="col-lg-6">
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Liste des utilisateurs </h5>
+
+        <!-- Table with stripped rows -->
+        <table class="table table-striped" style="text-align: center;">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nom d'utilsateur </th>
+              <th scope="col">Nom</th>
+              <th scope="col">Prénom</th>
+              <th scope="col">Role</th>
+              <th scope="col">Action</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr  *ngFor="let user of UsersList ">
+              <th scope="row">{{user.idUser}}</th>
+              <td><a>
+                <!--<img  src="{{'http://localhost:80/FileUploads/'+user.image.path}}" class="avatar" alt="Avatar"> -->
+                  {{user.userName}}</a></td>
+              <td>{{user.firstName}}</td>
+              <td>{{user.lastName}}</td>
+              <td>{{user?.roleU}}</td>
+             
+            </tr>
+           
+          </tbody>
+        </table>
+        <!-- End Table with stripped rows -->
+
+      </div>
+    </div>
+
+
+      <!-- Vendor JS Files -->
+  <script src="/assets/back/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="/assets/back/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/back/vendor/chart.js/chart.umd.js"></script>
+  <script src="/assets/back/vendor/echarts/echarts.min.js"></script>
+  <script src="/assets/back/vendor/quill/quill.min.js"></script>
+  <script src="/assets/back/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="/assets/back/vendor/tinymce/tinymce.min.js"></script>
+  <script src="/assets/back/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/assets/back/js/main.js"></script>
