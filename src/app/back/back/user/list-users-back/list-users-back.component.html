@@ -41,18 +41,20 @@
             </tr>
           </thead>
           <tbody>
-            <tr  *ngFor="let user of UsersList ">
-              <th scope="row">{{user.idUser}}</th>
-              <td><a>
-                <!--<img  src="{{'http://localhost:80/FileUploads/'+user.image.path}}" class="avatar" alt="Avatar"> -->
-                  {{user.userName}}</a></td>
-              <td>{{user.firstName}}</td>
-              <td>{{user.lastName}}</td>
-              <td>{{user?.roleU}}</td>
-             
-            </tr>
-           
+          <tr *ngFor="let user of UsersList">
+            <th scope="row">{{user.idUser}}</th>
+            <td>
+              <a>
+                <img   class="avatar" alt="Avatar">
+                  {{user.userName}}
+              </a>
+            </td>
+            <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user?.roleU}}</td>   
+          </tr> 
           </tbody>
+
         </table>
         <!-- End Table with stripped rows -->
 
